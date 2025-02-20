@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>ren.mikamo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="content">
+        <header>
+            <nav>
+                <div class="logo">Ren Mikamo</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buypanel.html">Panel</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Hanya menampilkan satu gambar -->
+                <img src="el1.jpg" alt="Single Image">
+            </div>
+        </div>
+        
+        <section class="hero">
+            <h1>Web Intro Ren Mikamo</h1>
+            <p class="yapping">
+                Halo dan selamat datang di web intro Ren Mikamo. Situs ini dibuat sebagai perkenalan singkat tentang Ren Mikamo, seorang programmer pemula yang masih dalam tahap eksplorasi dunia pemrograman. Meskipun baru memulai, Ren selalu bersemangat untuk belajar, mencoba hal-hal baru, dan mengembangkan keterampilan dalam bidang teknologi.
+                Namun, di sela-sela proses belajar, tidak jarang rasa gabut datang menghampiri. Dalam momen-momen tersebut, Ren sering kali mencari inspirasi, bermain dengan berbagai proyek kecil, atau sekadar menjelajahi dunia digital tanpa arah yang pasti.
+                Web ini hadir sebagai wadah untuk berbagi perjalanan, pengalaman, serta mungkin sedikit canda tawa dari kehidupan seorang programmer pemula. Terima kasih telah berkunjung, dan semoga Anda menikmati eksplorasi di dalamnya.
+            </p>
+          
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <h2>WhatsApp Group</h2>
+                <a href="https://chat.whatsapp.com/Di8ayHe5GVx4PEM0sBrJmA" class="btn">Join</a>
+            </div>
+            <div class="feature">
+                <h2>WhatsApp Channel</h2>
+                <a href="https://whatsapp.com/channel/0029Van5Ad6DZ4LUCJgICz1O" class="btn">Follow</a>
+            </div>
+            <div class="feature">
+                <h2>Instagram Account</h2>
+                <a href="https://www.instagram.com/sr.renmikamo?igsh=MWI1NjJ0eDRsa3o3eQ==" class="btn">Follow</a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 Ren Mikamo. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <div class="lottie-container" id="lottie-animation"></div>
+    
+    <script>
+        window.addEventListener("load", function() {
+            document.querySelector(".loader").style.display = "none";
+            document.querySelector(".content").style.display = "block";
+        });
+
+        document.getElementById('learnMoreBtn').addEventListener('click', function() {
+            alert('Welcome to Ripple Clone! Explore more about our services.');
+        });
+
+        // Load Lottie Animation
+        var animation = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "https://lottie.host/ac5dc4e2-d33d-427c-95dd-290e62909dbc/V6DXUlEoj8.json"
+        });
+    </script>
+</body>
+</html>
